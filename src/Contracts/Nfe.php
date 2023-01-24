@@ -12,5 +12,6 @@ interface Nfe {
     public function totalImpostos():? TotalImpostos;
     public function transportador():? Transportador;
     public function dadosAdicionais():? DadosAdicionais;
+    public function protocolo():? Protocolo;
 
 }

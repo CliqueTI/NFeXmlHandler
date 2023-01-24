@@ -9,4 +9,4 @@ require __DIR__.'/../vendor/autoload.php';
 
 $nfe = Nfe::arquivoXml(__DIR__.'/xml.xml');
 
-var_dump($nfe->emitente());
+var_dump($nfe->protocolo());

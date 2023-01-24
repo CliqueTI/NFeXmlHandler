@@ -57,7 +57,18 @@ class LeitorXml extends Nfe implements ContractNfe {
         return new Transportador($this->nfe->NFe->infNFe->transp);
     }
 
+    /**
+     * @return DadosAdicionais
+     */
     public function dadosAdicionais():? DadosAdicionais {
         return new DadosAdicionais($this->nfe->NFe->infNFe->infAdic);
+    }
+
+
+    /**
+     * @return Protocolo
+     */
+    public function protocolo():? Protocolo {
+        return new Protocolo($this->nfe->protNFe);
     }
 }
